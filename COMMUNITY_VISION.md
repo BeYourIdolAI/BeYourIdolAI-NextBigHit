@@ -205,9 +205,9 @@ BeYourIdolAI erbjuder en **AI-driven, gestbaserad musikskapandeplattform** som:
 
 | Företag | Värdering | Fokus | Vår Differentiering |
 |---------|-----------|-------|---------------------|
-| **Calm** | $2Mdr+ | Meditation & avslappningsljud | Vi lägger till **skapande** till konsumtion |
+| **Calm** | 2 miljarder USD+ | Meditation & avslappningsljud | Vi lägger till **skapande** till konsumtion |
 | **Soundtrap** | Förvärvad av Spotify ($50M+) | Webbläsarbaserad DAW för utbildning | Vi eliminerar **komplexitetsbarriären** |
-| **Lightricks** | $1.8Mdr+ | AI-drivna kreativa appar (Facetune) | Vi tar deras **AI-först approach till musik** |
+| **Lightricks** | 1.8 miljarder USD+ | AI-drivna kreativa appar (Facetune) | Vi tar deras **AI-först-strategi till musik** |
 
 **Total Adresserbar Marknad:**
 - Global musikproduktionsprogramvara marknad: **$12.5Mdr vid 2027** (CAGR 9.2%)
@@ -301,7 +301,7 @@ Ljudbibliotek ← ML-drivna Förslag ← Kontextmedvetenhet
 ### Varför Nu?
 
 1. **AI-Revolutionen:** Generativ AI gör vår vision tekniskt möjlig
-2. **Skapareko nomi-boom:** 50M+ skapare globalt söker nya verktyg
+2. **Skaparekonomi-boom:** 50M+ skapare globalt söker nya verktyg
 3. **Mobil-Först Generation:** 80% av musikkonsumtion är mobil
 4. **Post-Pandemisk Kreativitet:** Ökning i hemskapande av innehåll
 5. **Nordisk Fördel:** Starkt tech-ekosystem + kulturell finansiering
