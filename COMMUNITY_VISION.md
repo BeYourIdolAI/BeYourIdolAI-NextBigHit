@@ -201,6 +201,30 @@ We operate at the intersection of three massive trends:
 
 ---
 
+## 📈 Traction & Milestones
+
+| Milestone | Status |
+|-----------|--------|
+| v5.8 "FLOW DEPTH" Demo | ✅ Live on GitHub Pages |
+| Core platform development | ✅ Complete |
+| Documentation & Vision | ✅ Complete |
+| Community waitlist | 🔄 Building |
+| Beta launch | 🎯 Q2 2026 |
+
+**What we've built:**
+- Fully functional emotional music creation platform
+- Three unique engines: Classic Grid, Gemini Neon, Linear Flow
+- AI-powered features: mood detection, smart tips, emotional resonance
+- Mobile-first, PWA-ready architecture
+- Zero dependencies, runs in any browser
+
+**Next milestones:**
+- 1,000 beta users by Q2 2026
+- Strategic partnerships with mental health organizations
+- Seed funding to scale community features
+
+---
+
 ## 🌅 The World We're Building
 
 Imagine logging in and feeling:
@@ -223,6 +247,30 @@ From **loneliness** to **belonging**.
 From **creating alone** to **creating together**.
 
 **BeYourIdolAI — where no creative soul walks alone.**
+
+---
+
+## 🤝 Partner With Us
+
+We're building something meaningful, and we're looking for partners who share our vision.
+
+**We're seeking:**
+
+| Opportunity | Details |
+|-------------|---------|
+| **Pre-seed funding** | €200K - €500K to scale community features and launch beta |
+| **Mental health partnerships** | Collaborations with therapy centers, schools, youth programs |
+| **Music industry advisors** | Guidance on licensing, distribution, creator economy |
+| **Technical partners** | AI/ML expertise, audio technology, community platforms |
+
+**Why invest in BeYourIdolAI?**
+- First-mover in emotional music + community space
+- Addresses $100B+ creator economy market
+- Mental health angle opens doors to impact investing
+- Swedish founders with EU market access
+- Working product, clear vision, passionate team
+
+**Interested?** Open an issue on GitHub or reach out through our channels.
 
 ---
 
@@ -457,6 +505,30 @@ Vi verkar i skärningspunkten mellan tre massiva trender:
 
 ---
 
+## 📈 Framsteg & Milstolpar
+
+| Milstolpe | Status |
+|-----------|--------|
+| v5.8 "FLOW DEPTH" Demo | ✅ Live på GitHub Pages |
+| Kärnplattformsutveckling | ✅ Klar |
+| Dokumentation & Vision | ✅ Klar |
+| Community waitlist | 🔄 Bygger |
+| Beta-lansering | 🎯 Q2 2026 |
+
+**Vad vi har byggt:**
+- Fullt fungerande emotionell musikplattform
+- Tre unika motorer: Classic Grid, Gemini Neon, Linear Flow
+- AI-drivna funktioner: humördetektion, smarta tips, emotionell resonans
+- Mobile-first, PWA-redo arkitektur
+- Inga beroenden, körs i vilken webbläsare som helst
+
+**Nästa milstolpar:**
+- 1 000 beta-användare till Q2 2026
+- Strategiska partnerskap med organisationer för psykisk hälsa
+- Seed-finansiering för att skala community-funktioner
+
+---
+
 ## 🌅 Världen Vi Bygger
 
 Föreställ dig att logga in och känna dig:
@@ -479,6 +551,30 @@ Från **ensamhet** till **tillhörighet**.
 Från **att skapa ensam** till **att skapa tillsammans**.
 
 **BeYourIdolAI — där ingen kreativ själ går ensam.**
+
+---
+
+## 🤝 Samarbeta Med Oss
+
+Vi bygger något meningsfullt, och vi söker partners som delar vår vision.
+
+**Vi söker:**
+
+| Möjlighet | Detaljer |
+|-----------|----------|
+| **Pre-seed finansiering** | €200K - €500K för att skala community-funktioner och lansera beta |
+| **Partnerskap psykisk hälsa** | Samarbeten med terapicenter, skolor, ungdomsprogram |
+| **Musikbranschrådgivare** | Vägledning om licensiering, distribution, skaparekonomi |
+| **Tekniska partners** | AI/ML-expertis, ljudteknik, community-plattformar |
+
+**Varför investera i BeYourIdolAI?**
+- Först på marknaden inom emotionell musik + community
+- Adresserar en marknad på $100+ miljarder (skaparekonomin)
+- Psykisk hälsa-vinkel öppnar dörrar för impact-investeringar
+- Svenska grundare med tillgång till EU-marknaden
+- Fungerande produkt, tydlig vision, passionerat team
+
+**Intresserad?** Öppna ett issue på GitHub eller kontakta oss via våra kanaler.
 
 ---
 
