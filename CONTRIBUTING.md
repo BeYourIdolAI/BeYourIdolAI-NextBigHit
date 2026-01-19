@@ -48,6 +48,22 @@ Thank you for your interest in contributing to BeYourIdolAI! We welcome contribu
 - Ensure all tests pass
 - Update documentation if needed
 
+### Pull Request Approval
+
+- **All pull requests must be reviewed and approved by repository owners before merging.**
+
+---
+
+## Intellectual Property
+
+By submitting a contribution (pull request, issue, code, documentation, or other material), you acknowledge and agree that:
+
+- Your contribution may become part of the proprietary BeYourIdolAI codebase.
+- **No license is granted by contributions unless explicitly agreed in writing.**
+- You have the right to submit the contribution and it does not violate any third-party rights.
+
+---
+
 ## Code of Conduct
 
 - Be respectful and inclusive
