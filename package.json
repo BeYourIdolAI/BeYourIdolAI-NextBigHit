@@ -1,0 +1,13 @@
+{
+  "name": "beyouridolai-nextbighit",
+  "version": "5.8.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "DeejAI — The World's First Emotional Music Platform by BeYourIdolAI",
+  "author": "Jimmy Andersson & Frida Stålberg <officiell.beyouridol@gmail.com>",
+  "homepage": "https://beyouridolai.github.io/BeYourIdolAI-NextBigHit/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeYourIdolAI/BeYourIdolAI-NextBigHit.git"
+  }
+}
