@@ -1,60 +1,343 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be Your Idol AI - Next Big Hit</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>DeejAI — Flow Over Form | Skapa musik utan gränser</title>
+    <meta name="description" content="DeejAI är världens första emotionella musikplattform. Skapa beats utan rutnät, bara känsla. Gå med i waitlisten.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --bg-deep: #0a0a0f;
+            --neon-cyan: #00f5ff;
+            --neon-magenta: #ff00aa;
+            --neon-purple: #a855f7;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.6);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .bg-aurora {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .aurora-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .blob-1 {
+            width: 600px; height: 600px;
+            background: linear-gradient(135deg, var(--neon-cyan), #3b82f6);
+            top: -200px; right: -200px;
+        }
+
+        .blob-2 {
+            width: 500px; height: 500px;
+            background: linear-gradient(135deg, var(--neon-magenta), var(--neon-purple));
+            bottom: -150px; left: -150px;
+            animation-delay: -7s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .hero {
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #d3cce3, #e9e4f0);
+            text-align: center;
+            padding: 60px 24px;
         }
-        .hero-section {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(168, 85, 247, 0.1);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            color: var(--neon-purple);
+            margin-bottom: 32px;
+        }
+
+        .badge-dot {
+            width: 8px; height: 8px;
+            background: var(--neon-purple);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .gradient {
+            background: linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        @media (min-width: 500px) {
+            .signup-form { flex-direction: row; }
+        }
+
+        input[type="email"] {
+            flex: 1;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            font-size: 1rem;
+            color: white;
+            font-family: inherit;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: var(--neon-cyan);
+        }
+
+        input[type="email"]::placeholder {
+            color: rgba(255,255,255,0.4);
+        }
+
+        .btn {
+            padding: 16px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            background: linear-gradient(135deg, var(--neon-cyan), #3b82f6);
+            color: #000;
+            font-family: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(0, 245, 255, 0.4);
+        }
+
+        .note {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.4);
+            margin-top: 16px;
+        }
+
+        .success {
+            display: none;
             padding: 20px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background: rgba(0, 245, 255, 0.1);
+            border: 1px solid rgba(0, 245, 255, 0.3);
+            border-radius: 12px;
             text-align: center;
         }
-        .waitlist {
-            margin-top: 20px;
+
+        .success.show { display: block; }
+        .success h3 { color: var(--neon-cyan); margin-bottom: 8px; }
+
+        .features {
+            padding: 80px 24px;
         }
-        input[type="email"] {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 300px;
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
         }
-        button {
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-left: 10px;
+
+        @media (min-width: 600px) {
+            .features-grid { grid-template-columns: repeat(3, 1fr); }
         }
-        button:hover {
-            background-color: #0056b3;
+
+        .feature {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 32px 24px;
+            text-align: center;
         }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+
+        .feature h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .quote {
+            padding: 60px 24px;
+            text-align: center;
+        }
+
+        .quote-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(168,85,247,0.1), rgba(255,0,170,0.05));
+            border: 1px solid rgba(168,85,247,0.2);
+            border-radius: 24px;
+        }
+
+        .quote-text {
+            font-size: 1.4rem;
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .quote-author { color: var(--neon-purple); font-weight: 600; }
+        .quote-role { color: rgba(255,255,255,0.4); font-size: 0.9rem; }
+
+        footer {
+            padding: 40px 24px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        footer p { color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+        footer a { color: var(--neon-cyan); text-decoration: none; }
     </style>
 </head>
 <body>
-    <div class="hero-section">
-        <h1>Welcome to Be Your Idol AI</h1>
-        <p>Your next big hit is just a click away!</p>
-        <div class="waitlist">
-            <input type="email" placeholder="Join the Waitlist" />
-            <button>Sign Up</button>
-        </div>
+    <div class="bg-aurora">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
     </div>
+
+    <section class="hero">
+        <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Kommer snart — Gå med i waitlisten</span>
+        </div>
+        
+        <h1><span class="gradient">Flow Over Form</span><br>Musik utan gränser</h1>
+        
+        <p class="subtitle">DeejAI är världens första emotionella musikplattform. Skapa beats som glödande orber — ingen grid, bara känsla.</p>
+
+        <form class="signup-form" id="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="Din email..." required>
+            <button type="submit" class="btn">Jag vill vara först!</button>
+        </form>
+        <p class="note">🔒 Ingen spam. Vi meddelar dig när beta öppnar.</p>
+
+        <div class="success" id="success">
+            <h3>🎉 Du är med!</h3>
+            <p>Vi hör av oss när det är dags!</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🌊</div>
+                    <h3>Linear Flow</h3>
+                    <p>Placera beats fritt på en tidslinje. Ingen rigid grid — din kreativitet flödar.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Coach</h3>
+                    <p>Fastnar du? AI:n föreslår nästa steg baserat på genre och känsla.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💜</div>
+                    <h3>För välmående</h3>
+                    <p>Musik frisätter dopamin. DeejAI är designat för kreativt uttryck.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="quote-box">
+            <p class="quote-text">"Musik ska inte skapas i boxar — och människor ska inte leva i dem heller."</p>
+            <p class="quote-author">Frida Stålberg</p>
+            <p class="quote-role">Co-Creator, BeYourIdolAI</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 BeYourIdolAI · Made in Sweden 🇸🇪 · <a href="https://github.com/BeYourIdolAI/BeYourIdolAI-NextBigHit">GitHub</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            try {
+                await fetch(e.target.action, { method: 'POST', body: new FormData(e.target), headers: { 'Accept': 'application/json' } });
+            } catch(err) {}
+            e.target.style.display = 'none';
+            document.getElementById('success').classList.add('show');
+        });
+    </script>
 </body>
 </html>
