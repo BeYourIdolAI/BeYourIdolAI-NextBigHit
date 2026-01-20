@@ -341,48 +341,49 @@
         <p>© 2026 BeYourIdolAI · Made in Sweden 🇸🇪 · <a href="https://github.com/BeYourIdolAI/BeYourIdolAI-NextBigHit">GitHub</a></p>
     </footer>
 
-    <script>
-        const form = document.getElementById('form');
-        const success = document.getElementById('success');
-        const errorBox = document.getElementById('error');
-        const button = form.querySelector('button[type="submit"]');
+<script>
+  const form = document.getElementById('form');
+  const success = document.getElementById('success');
+  const errorBox = document.getElementById('error');
+  const button = form.querySelector('button[type="submit"]');
 
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            errorBox.classList.remove('show');
-            errorBox.textContent = '';
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errorBox.classList.remove('show');
+    errorBox.textContent = '';
 
-            // UI: lås knappen medan vi skickar
-            const oldLabel = button.textContent;
-            button.disabled = true;
-            button.textContent = 'Skickar...';
+    const oldLabel = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Skickar...';
 
-            try {
-                const res = await fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form),
-                    headers: { 'Accept': 'application/json' }
-                });
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
 
-                if (res.ok) {
-                    form.style.display = 'none';
-                    success.classList.add('show');
-                } else {
-                    // Formspree kan returnera JSON med fel
-                    let data = {};
-                    try { data = await res.json(); } catch (_) {}
-                    const msg = data?.errors?.[0]?.message || 'Något gick fel. Testa igen om en stund.';
-                    errorBox.textContent = msg;
-                    errorBox.classList.add('show');
-                }
-            } catch (err) {
-                errorBox.textContent = 'Nätverksfel. Kolla uppkoppling och försök igen.';
-                errorBox.classList.add('show');
-            } finally {
-                button.disabled = false;
-                button.textContent = oldLabel;
-            }
-        });
-    </script>
+      if (res.ok) {
+        form.style.display = 'none';
+        success.classList.add('show');
+      } else {
+        let data = {};
+        try { data = await res.json(); } catch (_) {}
+        const msg =
+          data?.errors?.[0]?.message ||
+          'Något gick fel. Testa igen om en stund.';
+        errorBox.textContent = msg;
+        errorBox.classList.add('show');
+      }
+    } catch (err) {
+      errorBox.textContent =
+        'Nätverksfel. Kolla uppkoppling och försök igen.';
+      errorBox.classList.add('show');
+    } finally {
+      button.disabled = false;
+      button.textContent = oldLabel;
+    }
+  });
+</script>
 </body>
 </html>
