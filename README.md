@@ -21,7 +21,7 @@ DeejAI is **Human + AI**: you stay the author, AI acts as a coach.
 
 ---
 
-## ✅ Demo & License Notice (Read This)
+## ✅ Demo & Data Notice (Read This)
 
 - This repository is **public** so anyone can try the **live demo**.
 - You are welcome to **use the demo** and **create music**.
@@ -65,8 +65,8 @@ Contact: **officiell.beyouridol@gmail.com**
 
 ## 📄 License
 
-**Proprietary — All rights reserved.**
-See: [LICENSE](./LICENSE)
+**Proprietary — All rights reserved.**  
+See: [LICENSE.md](./LICENSE.md)
 
 ---
 
